@@ -1,0 +1,1 @@
+# hugla-node-user-memory-db-adapter
