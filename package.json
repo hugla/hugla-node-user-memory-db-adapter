@@ -1,0 +1,31 @@
+{
+  "name": "userMemoryDBadapter",
+  "version": "0.1.0",
+  "description": "hugla web framework's node back-end user memory db adapter",
+  "keywords": [
+    "web",
+    "framework",
+    "hugla"
+  ],
+  "license": "MIT",
+  "repository": "hugla/hugla-node-user-memory-db-adapter",
+  "author": "noosxe <noosx.e@gmail.com> (https://noosxe.com/)",
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "userDBadapter": "https://github.com/hugla/hugla-node-user-db-adapter.git"
+  },
+  "devDependencies": {
+    "mocha": "2.3.3",
+    "mocha-lcov-reporter": "1.0.0",
+    "istanbul": "0.3.22",
+    "chai": "2.1.0",
+    "sinon": "1.17.1",
+    "sinon-chai": "2.8.0",
+    "jshint": "2.8.0"
+  },
+  "scripts": {
+    "lint": "jshint index.js lib/**.js",
+    "test": "mocha --reporter spec --bail",
+    "test-ci": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec"
+  }
+}
